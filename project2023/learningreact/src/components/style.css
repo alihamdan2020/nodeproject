@@ -1,0 +1,121 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a{
+    color:white;
+    text-decoration: none;
+}
+.container{
+    width:80vw;
+    margin:0 auto;
+    border:0px solid green
+}
+.heading{
+color:red;
+font-size:60px;
+background-color:rgb(51, 51, 47);
+color:white;
+padding:20px 10px;
+margin-bottom: 20px;
+border-radius: 10px;
+}
+
+.socialLinks{
+    list-style-type: none;
+    border:1px solid #ccc;
+    width:400px;
+    border-radius: 10px;
+}
+.socialLinks  li{
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.socialLinks  li:last-child{
+    border-bottom: 0px solid #ccc;
+}
+.socialLinks  label{
+    margin-left: 10px;
+}
+.text{
+    margin: 20px 0px;
+    line-height: 1.5em;
+}
+
+#root{
+    width:80vw;
+    margin:20px auto;
+    height:1500px;
+}
+
+#main{
+    padding:20px 0px;
+}
+
+.mainContent{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    column-gap: 30px;
+    row-gap: 20px;
+}
+.emp{
+    box-shadow: 0px 0px 12px #ccc;
+    padding:10px;
+    color:wheat;
+}
+.emp img{
+    border:2px solid white;
+    margin:0 auto;
+}
+.emp p{
+    margin:10px 0px;
+}
+.emp h3{
+    text-align: center;
+    text-transform: uppercase;
+    margin:10px 0px;
+}
+
+.emp p:nth-child(2){
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#footer{
+   
+    background-color: red;
+}
+.footerContent{
+    display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px;
+}
+#footer ul{
+list-style: none;
+}
+#footer ul li{
+    margin-bottom: 20px;
+}
+
+#footer .map{
+width:200px;
+height:200px;
+border:1px solid white;
+background-image: url(C:\Users\TOSHIBA\Desktop\project2023\learningreact\public\images\logo192.png);
+background-repeat: no-repeat;
+background-position:center;
+}
+
+
+

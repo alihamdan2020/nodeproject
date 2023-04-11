@@ -1,0 +1,55 @@
+const  Members=[
+{
+id:"1",Name:"ali",position:"CEO",image:"images/pic1.jpg"
+},
+{
+    id:"2",Name:"jawad",position:"Developper",image:"images/pic1.jpg"
+},
+{
+    id:"3",Name:"fadi",position:"Designer",image:"images/pic1.jpg"
+},
+{
+    id:"4",Name:"amer",position:"Designer",image:"images/pic1.jpg"
+},
+{
+    id:"5",Name:"hanan",position:"Designer",image:"images/pic1.jpg"
+},
+{
+    id:"6",Name:"jawad",position:"Designer",image:"images/pic1.jpg"
+},
+{
+    id:"7",Name:"zaynab",position:"Designer",image:"images/pic1.jpg"
+},
+{
+    id:"8",Name:"nawal",position:"Accountant",image:"images/pic1.jpg"
+},
+{
+    id:"9",Name:"ahmad",position:"Accountant",image:"images/pic1.jpg"
+},
+{
+    id:"10",Name:"salman",position:"Guard",image:"images/pic1.jpg"
+},
+{
+    id:"11",Name:"nabila",position:"Designer",image:"images/pic1.jpg"
+},
+{
+    id:"12",Name:"nabil",position:"Designer",image:"images/pic1.jpg"
+},
+{
+    id:"13",Name:"jawad",position:"Finance CEO",image:"images/pic1.jpg"
+},
+{
+    id:"14",Name:"wael",position:"Developper",image:"images/pic1.jpg"
+},
+{
+    id:"15",Name:"ayman",position:"Designer",image:"images/pic1.jpg"
+},
+{
+    id:"16",Name:"salim",position:"Guard",image:"images/pic1.jpg"
+},
+{
+    id:"17",Name:"kassem",position:"Guard",image:"images/pic1.jpg"
+},
+];
+
+export default Members
