@@ -1,4 +1,4 @@
-const  Members=[
+export const  Members=[
 {
 id:"1",Name:"ali",position:"CEO",image:"images/pic1.jpg"
 },
@@ -52,4 +52,4 @@ id:"1",Name:"ali",position:"CEO",image:"images/pic1.jpg"
 },
 ];
 
-export default Members
+

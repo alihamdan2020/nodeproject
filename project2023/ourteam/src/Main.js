@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Member from "./Member";
-import Members from "./Allmembers";
+import {Members} from "./Allmembers";
 
-let i=0;
+let i=-1;
 
 function Main () {
 
@@ -14,14 +14,12 @@ function Main () {
     
     const showMember=function(){
         
-        if(i<Members.length){
+        if(i<Members.length-1){
             setprson(function(x){
-                try{
+               i++;
                     return [...x,Members[i]]
-                }
-                finally{
-                    i++;
-                }
+               
+                
                 
             })
         }
