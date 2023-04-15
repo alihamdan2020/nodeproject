@@ -1,0 +1,38 @@
+.movie{
+    background-color:var(--lighter-body-background-color);
+    border-radius: 10px;
+    color:white;
+    padding: 20px 40px;
+}
+.movie img{
+    width:100%;
+    border-radius: 10px;
+    min-height: 250px;
+    margin-bottom: 10px;
+}
+.movie div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+span:first-child{
+    text-decoration: underline;
+    color:white;
+    margin-right: 20px;
+}
+span:last-child{
+    color:var(--hover-color)
+}
+.title{
+margin-bottom: 10px;
+font-weight: lighter;
+}
+.fa-star{
+    color:gold;
+}
+.fa-download{
+    color:var(--hover-color)
+}
+.moviename p:last-child i{
+    margin-left: 10px;
+}

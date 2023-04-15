@@ -34,12 +34,12 @@ function Main () {
         
     }
     return(
-        <div>
+        <>
         <button onClick={showMember}>Click To Show Our Team</button>    
             <div className="main">
             {mem}
             </div>
-        </div>
+        </>
         
     )
 }
