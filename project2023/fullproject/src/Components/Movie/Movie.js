@@ -1,15 +1,17 @@
 import '../../assets/css/fontawesome.css'
 import './Movie.css'
+import { FaStar ,FaDownload} from "react-icons/fa";
 
 function Movie(props){
 return(
     <div className="movie">
-        <img src={props.image}/>
+        <div className='image-movie' style={{backgroundImage:`url(${props.image})`}}>
+
+        </div>
    
-        <div className='moviename'><p>{props.name}</p><p>{props.rate}<i class="fa-solid fa-star"></i></p></div>
-        <div className='moviename'><p>{props.subname}</p><p>{props.size}<i class="fa-solid fa-download"></i></p></div>
-   
-    </div>
+        <div className='moviename'><p>{props.name}</p><p>{props.rate}<FaStar className='istar' /></p></div>
+        <div className='moviename'><p>{props.subname}</p><p>{props.size}<FaDownload className='idownload'/></p></div>
+    </div> 
 )
 }
 

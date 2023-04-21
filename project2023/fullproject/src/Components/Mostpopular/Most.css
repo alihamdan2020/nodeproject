@@ -1,15 +1,16 @@
-.movies{
+.section-repet{
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
     column-gap: 20px;
     row-gap: 20px;
+    position: relative;
 }
 
 
-.movieswrapper{
+.section-wrapper{
     background-color: var(--body-background-color);
     padding: 40px 20px;
-    border-radius: 10px;
+    border-radius: var(--border-radius);
     margin-top: 20px;
     position: relative;
     padding-bottom: 60px;
@@ -26,7 +27,7 @@
     background-color: var(--hover-color);
     padding:10px 40px;
     color:white;
-    border-radius: 10px;
+    border-radius: var(--border-radius);
     text-decoration: none;
     font-weight: 400;
 }

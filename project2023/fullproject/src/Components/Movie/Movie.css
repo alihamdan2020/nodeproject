@@ -1,14 +1,15 @@
 .movie{
     background-color:var(--lighter-body-background-color);
-    border-radius: 10px;
+    border-radius: var(--border-radius);
     color:white;
     padding: 20px 40px;
 }
-.movie img{
+.movie .image-movie{
     width:100%;
-    border-radius: 10px;
-    min-height: 250px;
+    height:200px;
+    border-radius: var(--border-radius);
     margin-bottom: 10px;
+    background-size: cover;
 }
 .movie div{
     display: flex;
@@ -27,12 +28,14 @@ span:last-child{
 margin-bottom: 10px;
 font-weight: lighter;
 }
-.fa-star{
+.istar{
     color:gold;
 }
-.fa-download{
+.idownload{
     color:var(--hover-color)
 }
-.moviename p:last-child i{
+.moviename p:last-child .istar,
+.moviename p:last-child .idownload
+{
     margin-left: 10px;
 }

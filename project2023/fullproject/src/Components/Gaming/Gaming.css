@@ -1,0 +1,30 @@
+.gaming-library{
+    margin-top: 50px;
+   
+}
+
+.line-game ul{
+    flex:1;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid var(--hover-color);
+    margin-bottom: 5px;
+}
+@media screen and (max-width:991px){
+    
+    .line-game ul li{
+    flex: 1 1 50%;
+}
+.image-line-game{
+    flex:1 1 100% !important;
+    justify-content: center;
+    background-color: red;
+    align-items: center;
+    display: flex;
+}
+
+}
+    

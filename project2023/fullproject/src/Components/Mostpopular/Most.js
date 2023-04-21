@@ -1,5 +1,6 @@
 import Movie from '../Movie/Movie'
 import Data from '../../Data/Data'
+import Button from '../Button/Button'
 import './Most.css'
 
 function Most(){
@@ -8,14 +9,12 @@ function Most(){
         return <Movie name={x.name} subname={x.subname} rate={x.rate} size={x.size} image={x.img}/>
     })
     return(
-        <div className='movieswrapper'>
+        <div className='section-wrapper'>
         <h1 className='title'><span>Most Popular</span><span>Right Now</span></h1>
-        <div className='movies'>
+        <div className='section-repet'>
         {mov}
         </div>
-        <div className='Discover'>
-            <a href="#">Discover popular</a>
-        </div>
+       <Button title='Discover Popular' div='btn-section'/>
         </div>
     )
 }

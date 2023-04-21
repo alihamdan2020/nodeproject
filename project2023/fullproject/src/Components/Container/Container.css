@@ -1,6 +1,6 @@
 .container{
     padding:20px 20px;
     background-color:var(--lighter-body-background-color);
-    border-radius: 10px;
+    border-radius: var(--border-radius);
     padding-bottom: 80px;
 }

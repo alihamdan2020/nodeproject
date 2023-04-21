@@ -7,7 +7,8 @@
 :root{
     --body-background-color:#1f2122;
     --hover-color:rgb(236,96,144);
-    --lighter-body-background-color: #27292a
+    --lighter-body-background-color: #27292a;
+    --border-radius:20px
 }
 html{
     font-family: 'Poppins', sans-serif;
