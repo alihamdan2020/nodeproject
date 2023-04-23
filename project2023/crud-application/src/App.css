@@ -1,0 +1,40 @@
+ul{
+  list-style-type:none;
+  display: flex;
+  gap: 20px;
+}
+.a{
+  text-decoration: none;
+  color:green;
+  font-size: 1.4em;
+}
+.frm-div{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  bordeR:1px solid green;
+  padding:20px 20px;
+  width:300px;
+  background-color: chartreuse;
+  border-radius: 10px;
+
+
+}
+.frm-div div{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.frm-div div input{
+ width:calc(100% - 25%);
+ outline: 0px;
+}
+
+
+
+.frm-div div:last-child button{
+  margin-top: 25px;
+  padding: 5px 15px;
+margin-left: calc(100% - 65px);
+}
