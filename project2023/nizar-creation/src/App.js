@@ -1,14 +1,14 @@
 
 import{Header,Container,Footer,Home,About,Gallery} from './compo/index'
 import {Link} from 'react-router-dom'
-import { BrowserRouter as Router,Route,Routes } from 'react-router-dom'
+import { HashRouter as Router,Route,Routes } from 'react-router-dom'
 
 import './main.css'
 
 function App(){
 return(
   <>
-  <Router>
+  <Router forceRefresh={true}>
   <Header/>
   <Container>
   <Routes>
