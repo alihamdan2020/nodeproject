@@ -26,8 +26,10 @@ export default function Create(){
     const removeSubmit=function(e){
         e.preventDefault();
          //to prevent clicking button to submit the form
-        axios.post('http://localhost:80/API/index.php',inputs);
-        navigate('/');
+        axios.post('http://localhost:80/API/index.php',inputs).then(function(){
+          navigate('/');
+        });
+        
             
         //to call php file from your server, in our case from localhost, i had create folder API with index file
         //axios function take 3 arguments, location of file and date to pass

@@ -1,26 +1,38 @@
 import axios from "axios"
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import User from './User';
+import Data from './Data'
 
 
 export default function List(){
 
     let [user,setUser]=useState([]);
-
+    
+    useEffect(() => {
+         getUsers()
+    }, [])
+    // [] mean apply the useEffect only once
+    
+    function getUsers(){
+        axios.get('http://localhost:80/API/').then(function(response){
+        setUser(response.data);
+        
+        });
+    }
     let list_user=user.map(function(x){
-        return <User name={x.name} email={x.email} />
+        return <User key={x.id} name={x.name} email={x.email} id={x.id} />
     })
 
-    function displayUser(){
-        setUser(function(x){
-            let a =axios.get('http://localhost:80/API/index.php');
-            return [...x,a]
-        })
-    }
+    // function displayUser(){
+    //     setUser(function(x){
+    //         let a =axios.get('http://localhost:80/API/index.php');
+    //         return [...x,a]
+    //     })
+    // }
 
     return(
         <>
-       <h1 onClick={displayUser}>List of all users</h1>
+       <h1>List of all users</h1>
        <div>
 {list_user}
        </div>

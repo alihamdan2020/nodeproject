@@ -1,0 +1,12 @@
+.hero{
+    background-repeat: no-repeat;
+    height:680px;
+    background-size: cover;
+    max-width: 100%;
+}
+
+@media only screen and (max-width:600px){
+.hero{
+height:200px;
+}
+}

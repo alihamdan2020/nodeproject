@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter,Routes,Route,Link} from 'react-router-dom';
-import { Create,Update,List } from './components';
+import { Create,Update,List ,Edit} from './components';
 import Lit from './components/ListUser';
 
 function App() {
@@ -19,6 +19,7 @@ function App() {
       <Route path="/" element={<List/>}></Route>
       <Route path="/users/create" element={<Create/>}></Route>
       <Route path="/users/update" element={<Update/>}></Route>
+      <Route path="/users/edit/:id" element={<Edit/>}></Route>
     </Routes>
     </BrowserRouter>
   );

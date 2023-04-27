@@ -1,0 +1,53 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+   transition: 2s;
+   height:100px;
+   padding-right: 5px;
+}
+header img{
+    width:100px;
+    height:106px;
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+    gap:10px;
+}
+header ul li a{
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: blue;
+    color:white;
+    text-decoration: none;
+}
+.div-burger{
+    display: none;
+    font-size: 24px;
+}
+
+.show{
+    height:300px;
+}
+
+@media only screen and (max-width:600px){
+
+header .div-burger{
+    display: flex;
+    height:104px;
+    align-items: center;
+}
+header{
+    align-items:flex-start;
+}
+header ul{
+    flex-direction: column;
+    position: absolute;
+    left:0;
+    top:104px;   
+}
+}
