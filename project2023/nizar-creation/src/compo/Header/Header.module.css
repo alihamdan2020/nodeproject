@@ -1,4 +1,4 @@
-header{
+.header{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9,16 +9,16 @@ header{
    padding-right: 5px;
    background-color:black;
 }
-header img{
+.img{
     width:200px;
 }
 
-header ul {
+.mainul {
     display: flex;
     list-style-type: none;
     gap:10px;
 }
-header ul li a{
+.a,.frstlink{
     display: inline-block;
     padding: 5px;
    font-size: 1.4em;
@@ -26,7 +26,7 @@ header ul li a{
     text-decoration: none;
     position: relative;
 }
-header ul li a:after{
+.a:after{
     content: '';
     position: absolute;
     left:0;
@@ -37,7 +37,7 @@ header ul li a:after{
     transition: 0.5s;
 }
 
-a.frst-link:after{
+.frstlink:after{
     content: '';
     position: absolute;
     left:0;
@@ -46,31 +46,31 @@ a.frst-link:after{
     height:3px;
     background-color: orange;   
 }
-header ul li a:hover:after{
+.a:hover:after{
 width: 100%;
 }
 
-.div-burger{
+.burger{
     display: none;
     font-size: 24px;
     color:white;
 }
 
 .show{
-    height:455px;
+    height:495px;
 }
 
 @media only screen and (max-width:600px){
 
-header .div-burger{
+.burger{
     display: flex;
     height:160px;
     align-items: center;
 }
-header{
+.header{
     align-items:flex-start;
 }
-header ul{
+.mainul{
     flex-direction: column;
     position: absolute;
     left:0;

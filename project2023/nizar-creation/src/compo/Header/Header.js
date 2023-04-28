@@ -1,40 +1,37 @@
-import './Header.css'
+import HeaderCss from'./Header.module.css'
 import logo from '../../images/logo.jpeg'
 import { Link } from 'react-router-dom'
 import {FaBars} from 'react-icons/fa'
-import { useEffect } from 'react'
+import { useState } from 'react'
+import {Data} from './Data'
 
 
 function Header(){
-    useEffect(() => {
-        test()
-   }, [])
 
-   function test(){
-    var a =document.getElementsByClassName('icon-bars')[0];
-    var listmenu=document.getElementsByClassName('main-ul')[0];
-    var header=document.getElementsByTagName('header')[0];
-    a.addEventListener("click",function(){
-       header.classList.toggle("show");
-       
-       
-        
+
+    let [openMenu,setOpenMenu]=useState(false);
+    
+    const ToggleMenu=function(){
+       setOpenMenu(function(x){
+        return !x;
+       })
+    }
+  
+    let links=Data.map(function(item) {
+
+    return <li key={item.id}><Link to={item.to} className={HeaderCss.a}>{item.link}</Link></li>;
     })
-   }
+
+    var height=openMenu? {"height":"495px"} : {"height":"160px"};
     return(
-        <header>
-        <Link to="/"><img src={logo}/></Link>
-        <ul className='main-ul'>
-        <li><Link to='/' className='frst-link'>Home</Link></li>
-        <li><Link to='/about'>About</Link></li>
-        <li><Link to='/portfolio'>Portfolio</Link></li>
-        <li><Link to='/services'>Services</Link></li>
-        <li><Link to='/blog'>Blog</Link></li>
-        <li><Link to='/contact'>Contact Us</Link></li>
-        <li><Link to='/gallery'>Gallery</Link></li>
+        <header style={height} className={HeaderCss.header}>
+        <Link to="/"><img src={logo} className={HeaderCss.img}/></Link>
+        <ul className={HeaderCss.mainul}>
+        <li><Link to='/' className={HeaderCss.frstlink}>Home</Link></li>
+        {links}
          </ul>
-        <div className='div-burger'>
-        <FaBars className='icon-bars'/>
+        <div className={HeaderCss.burger}>
+        <FaBars className={HeaderCss.bars} onClick={ToggleMenu}/>
         </div>
         </header>
     )
