@@ -17,9 +17,9 @@ function Header(){
        })
     }
   
-    let links=Data.map(function(item) {
-
-    return <li key={item.id}><Link to={item.to} className={HeaderCss.a}>{item.link}</Link></li>;
+    let links=Data.map(function(item,index) {
+       let myClass=index===0 ? HeaderCss.frstlink : HeaderCss.a  ;
+    return <li key={item.id}><Link to={item.to} className={myClass}>{item.link}</Link></li>;
     })
 
     var height=openMenu? {"height":"495px"} : {"height":"160px"};
@@ -27,7 +27,6 @@ function Header(){
         <header style={height} className={HeaderCss.header}>
         <Link to="/"><img src={logo} className={HeaderCss.img}/></Link>
         <ul className={HeaderCss.mainul}>
-        <li><Link to='/' className={HeaderCss.frstlink}>Home</Link></li>
         {links}
          </ul>
         <div className={HeaderCss.burger}>

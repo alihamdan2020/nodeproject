@@ -1,4 +1,9 @@
 export const Data = [
+  {
+    id: '1',
+    to: '/home',
+    link: 'Home',
+  },
     {
       id: '2',
       to: '/about',
