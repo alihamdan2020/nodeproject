@@ -1,9 +1,11 @@
-import Hero from './Hero/Hero'
+import Landing from './Landing/Landing'
+import Services from './Services/Services'
 function Home(){
     return(
-        <div>
-            <Hero />
-        </div>
+        <>
+            <Landing />
+            <Services />
+        </>
     )
 }
 

@@ -13,11 +13,11 @@ export default function List(){
     }, [])
     // [] mean apply the useEffect only once
     
-    function getUsers(){
-        axios.get('http://localhost:80/API/').then(function(response){
-        setUser(response.data);
+    async function getUsers(){
+        let response=await axios.get('http://localhost:80/API/')
+		 setUser(response.data);
         
-        });
+     
     }
     let list_user=user.map(function(x){
         return <User key={x.id} name={x.name} email={x.email} id={x.id} />
