@@ -1,6 +1,5 @@
 
-import{Header,Container,Footer,Home,About,Gallery,Admin} from './compo/index'
-import {Link} from 'react-router-dom'
+import{Header,Container,Footer,Home,About,Gallery,Admin,Service,ButtonToUp} from './compo/index'
 import { HashRouter as Router,Route,Routes } from 'react-router-dom'
 
 import './main.css'
@@ -16,10 +15,13 @@ return(
           <Route path='/about' element={<About />}/>
           <Route path='/gallery' element={<Gallery />}/>
           <Route path='/admin' element={<Admin />}/>
-          
+          {/* note thant service with no s at end, mean component that render all services */}
+          {/* while in nav bar services is a link to same home page at section services */}
+          <Route path='/service' element={<Service />}/>
   </Routes>
   </Container>
   <Footer/>
+  <ButtonToUp/>
   </Router>
   </>
 

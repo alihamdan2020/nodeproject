@@ -1,0 +1,138 @@
+.feature-card {
+    width: 350px;
+    border: 2px solid #ececec;
+  }
+  
+  .first-img {
+    position: relative;
+    height: 250px;
+    transition: 10s;
+    background-blend-mode: overlay;
+    border:0px solid black;
+  }
+  
+  .first-img:after {
+    position: absolute;
+    content: "";
+    right: 0px;
+    bottom: 0px;
+    border-style: solid;
+    border-width: 0px 0px 100px 350px;
+    border-color: transparent transparent white transparent;
+    transition: 0.5s;
+  }
+  
+  .first-img:hover:after {
+    border-width: 170px 500px 170px 0;
+  }
+  
+  
+.feature-card h3 {
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 42px;
+    text-transform: capitalize;
+    position: relative;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+  }
+  
+  .feature-card h3:after {
+    position: absolute;
+    content: "";
+    width: calc(100% - 35px);
+    height: 5px;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .first:after {
+    background-color: rgb(244, 64, 54);
+  }
+  
+  .second:after {
+    background-color: rgb(0, 150, 136);
+  }
+  
+  .third:after {
+    background-color: rgb(3, 169, 244);
+  }
+  
+  .feature-card p {
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 1.8;
+    text-align: center;
+    color: gray;
+    font-size: 20px;
+    font-weight: normal;
+  }
+  
+.feature-footer {
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .feature-footer a {
+    background: transparent;
+    border-style: solid;
+    border-width: 2px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    position: relative;
+    text-transform: capitalize;
+    display: block;
+    transition: 0.5s;
+    font-weight: bold;
+  }
+  
+  .feature-footer a.one {
+    color: var(--color-one);
+    border-color: var(--color-one);
+  }
+  
+  .feature-footer a.two {
+    color: var(--color-two);
+    border-color: var(--color-two);
+  }
+  
+  .feature-footer a.three {
+    color: var(--color-three);
+    border-color: var(--color-three);
+  }
+  
+  .feature-footer a:hover {
+    color: white;
+  }
+  
+  .feature-footer a:before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 100%;
+    transition: 0.5s;
+    z-index: -1;
+    left: 0px;
+    top: 0px;
+  }
+  
+  .feature-footer a.one:before {
+    background-color: var(--color-one);
+  }
+  
+  .feature-footer a.two:before {
+    background-color: var(--color-two);
+  }
+  
+  .feature-footer a.three:before {
+    background-color: var(--color-three);
+  }
+  
+  .feature-footer a:hover:before {
+    width: 100%;
+  }

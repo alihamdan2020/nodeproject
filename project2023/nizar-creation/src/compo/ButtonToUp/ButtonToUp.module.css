@@ -1,0 +1,11 @@
+.btn{
+    position: fixed;
+    bottom: 20px;
+    right:20px;
+    border:0px solid green;
+    cursor: pointer;
+    padding: 10px;
+    color:var(--color-one);
+    font-size: 1.4em;
+    transition: 1s;
+}

@@ -2,7 +2,7 @@ import './lightbox.css'
 import './Gallery.css'
 import GalleryPicture from './gallery-picture/GalleryPicture'
 import { useEffect, useState } from 'react';
-import { json } from 'react-router-dom';
+
 import axios from 'axios';
 import Data from './Data'
 import Landing from '../Home/Landing/Landing'

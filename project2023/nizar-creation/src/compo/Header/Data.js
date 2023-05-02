@@ -16,7 +16,7 @@ export const Data = [
     },
     {
       id: '4',
-      to: '/services',
+      to: './#services',
       link: 'Services',
     },
     {
