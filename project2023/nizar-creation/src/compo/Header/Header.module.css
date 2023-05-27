@@ -1,25 +1,25 @@
 .container{
-    width:80vw;
-    margin:0 auto;
-    position: absolute;
-    top:0;
-    left:50%;
-    transform: translate(-50%);
-    overflow: hidden;
+
     transition: 2s;
-    border:0px solid green;
+    display: flex;
+    align-items: center;
+
 }
 
     .header{
+    width:80vw;
+    margin:0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 1;
-    width:100%;
+    border:0px solid green;
+    position: relative;
+    z-index: 1000;
 }
 
 .img{
-    width:150px;
+    width:75px;
 }
 
 .mainul {
@@ -27,15 +27,44 @@
     list-style-type: none;
     gap:10px;
     padding-right: 100px;
+    position:relative;
 }
-.a,.frstlink{
+.subul{
+    position:absolute;
+    list-style-type:none;
+    z-index: 2;
+    display: none;
+    
+}
+.subul li{
+    margin-bottom: 10px;
+    background-color: aliceblue;
+}
+
+.a,.portfolio{
+    display: inline-flex;
+    padding: 5px;
+   font-size: 1.4em;
+    color:goldenrod;
+    text-decoration: none;
+    position: relative;
+    align-items: center;
+}
+.firstlink{
     display: inline-block;
     padding: 5px;
    font-size: 1.4em;
-    color:white;
-    text-decoration: none;
+    color:goldenrod;
+    text-decoration: underline;
     position: relative;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 5px;
 }
+.fontAwesomIcon{
+    font-size: 1em;
+    color:goldenrod;
+}
+/*
 .a:after{
     content: '';
     position: absolute;
@@ -59,11 +88,11 @@
 .a:hover:after{
 width: 100%;
 }
-
+*/
 .burger{
     display: none;
     font-size: 24px;
-    color:white;
+    color:goldenrod;
 }
 
 .show{
@@ -75,6 +104,9 @@ width: 100%;
     width: 100vw;
     z-index: 1;
     top:20px;
+    display: flex;
+    align-items: flex-start;
+    overflow: hidden;
 }
 .img{
     width:75px;
@@ -85,13 +117,18 @@ width: 100%;
     height:155px;
     align-items: center;
 }
-.header{
-    align-items:center;
-}
+
 .mainul{
     flex-direction: column;
     position: absolute;
     left:0;
-    top:150px;   
+    top:100%;
+    background-color: black;      
+}
+.header{
+    align-items:center;
+    border:0px solid green;
+    height:100px;
+    width:90%;
 }
 }

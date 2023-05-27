@@ -7,7 +7,7 @@
 
 .services .content-services {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   column-gap: 10px;
@@ -53,7 +53,7 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: var(--main-color);
+  background-color: var(--color-one);
   transform: translateY(-50%);
   z-index: -1;
 }
@@ -102,7 +102,7 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: var(--main-color);
+  background-color: var(--color-one);
   z-index: -1;
   transform: translateY(-50%);
 }

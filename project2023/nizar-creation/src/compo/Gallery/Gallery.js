@@ -2,6 +2,7 @@ import './lightbox.css'
 import './Gallery.css'
 import GalleryPicture from './gallery-picture/GalleryPicture'
 import { useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet';
 
 import axios from 'axios';
 import Data from './Data'
@@ -25,6 +26,9 @@ const result=Data.map(function(x){
 
     return(
         <div>
+            <Helmet>
+                <title>Gallery</title>
+            </Helmet>
             <Landing />
         <div className="gallery">
            {result}

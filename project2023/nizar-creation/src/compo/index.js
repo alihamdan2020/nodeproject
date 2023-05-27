@@ -7,4 +7,5 @@ export {default as Gallery}from './Gallery/Gallery'
 export {default as Admin}from './Admin/Admin'
 export {default as Service}from './Service/Service'
 export {default as ButtonToUp}from './ButtonToUp/ButtonToUp'
+export {default as Blog}from './Blog/Blog'
 

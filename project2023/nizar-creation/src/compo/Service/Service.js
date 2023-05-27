@@ -1,10 +1,12 @@
 import './Service.css'
 import {Data} from '../Home/Services/ServicesData'
-import { useEffect } from 'react'
+import { Helmet } from 'react-helmet'
+import Paragraph from './Paragraph'
 
 // import baguetteBoxMin from 'baguettebox.js';
 
-export default function Service(){
+export default function Service(props){
+   
 //     window.addEventListener('load', function() {
  
 //     baguetteBoxMin.run('.gallery1');
@@ -15,26 +17,16 @@ export default function Service(){
 // });
 
 
-    // let cont=[]
-    // var i,j;
-    // let getImage=(()=>{
-        
-    //     for(i=0;i<Data.length;i++){
-    //         for(j=0;j<Data[i].images.length;j++)
-    //     cont.push(Data[i].images[j])
-    //     }
-    //     console.log(cont)
-    //     return (cont)
-    // })
 
-    // useEffect(function(){
-    //     getImage()
-    // },[])
-
+    let paragraphResult=Data.map(function(text){
+        return(
+            <Paragraph text={text.serviceDesc}/>
+        )
+    })
     let result=Data.map(function(service){
         return (
 
-            <div className='service' key={service.id}>
+            <div className='service' key={service.id} id={service.id}>
             <h1>{service.serviceName}</h1>
             <div className={service.gallery}>
 
@@ -43,25 +35,30 @@ export default function Service(){
                     // by default data-light-box='model' but i changed to set to class of each div
                     //another way, each srservice images div i det it to specia; class such as gallery1
                     //when lightbox opeb for this section, only it display image gallery1
+                <div style={{display:'flex',alignItems:'center'}}>
                 <a href={imgname.imgName} data-lightbox={service.gallery}  title={imgname.title}>
-                <img src={imgname.imgName} className='serviceimg' alt='not foud' key={imgname}/>  
+                <img src={imgname.imgName} className='serviceimg' alt='not foud' />  
                 </a>
+                </div>
                 )
                 
             })}
             </div>
             <p>
-            {service.serviceDesc}
+            { 
+            <Paragraph text={service.serviceDesc}></Paragraph>
+            }
             </p>
-            <div>
-                {/* {getImage} */}
-            </div>
             </div>
         )
     })
     
     return(
+
         <div className='service'>
+            <Helmet>
+        <title>Services</title>
+        </Helmet>
         {result}
        </div>
     )

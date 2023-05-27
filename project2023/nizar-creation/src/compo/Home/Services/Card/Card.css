@@ -1,6 +1,7 @@
 .feature-card {
     width: 350px;
     border: 2px solid #ececec;
+    overflow: hidden;
   }
   
   .first-img {
@@ -30,7 +31,7 @@
 .feature-card h3 {
     text-align: center;
     padding: 10px 0px;
-    font-size: 42px;
+    font-size: 22px;
     text-transform: capitalize;
     position: relative;
     width: fit-content;
@@ -50,7 +51,7 @@
   }
   
   .first:after {
-    background-color: rgb(244, 64, 54);
+    background-color: var(--color-one);
   }
   
   .second:after {

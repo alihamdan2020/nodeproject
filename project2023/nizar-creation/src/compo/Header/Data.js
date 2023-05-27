@@ -11,7 +11,7 @@ export const Data = [
     },
     {
       id: '3',
-      to: '/portfolio',
+      to: '/#portfolio',
       link: 'Portfolio',
     },
     {
@@ -20,19 +20,18 @@ export const Data = [
       link: 'Services',
     },
     {
-      id: '5',
+      id: '7',
+      to: '/prices',
+      link: 'Prices',
+    },
+    {
+      id: '6',
       to: '/blog',
       link: 'Blog',
     },
     {
-      id: '6',
+      id: '8',
       to: '/contact',
       link: 'Contact',
     },
-    {
-      id: '7',
-      to: '/gallery',
-      link: 'Gallery',
-    }
-
   ];

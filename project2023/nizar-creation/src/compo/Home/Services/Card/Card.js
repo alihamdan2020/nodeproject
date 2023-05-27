@@ -4,7 +4,7 @@ import './Card.css'
 function Card(props)
 {
 	const mystyle = {
-		background:`url(${props.serviceImage}),${props.color}`,
+		background:`url(${props.serviceImage})`,
 		backgroundSize:'cover'
 	  };
     return(

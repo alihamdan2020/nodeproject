@@ -1,0 +1,162 @@
+.footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+    width:80vw;
+    margin:0 auto;
+    flex-wrap: wrap;
+  }
+  
+  
+  .socialmedia {
+    border: 0px solid green;
+    margin-right: 20px;
+    padding-right: 25px;
+    padding-left: 10px;
+    color:green;
+  }
+  
+  .socialmediah3 {
+    color: white;
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+ 
+  .links{
+    color:white;
+    text-decoration: none;
+  }
+  
+  
+  .social-media p {
+    color: rgb(185, 185, 185);
+    margin-top: 40px;
+    line-height: 29px;
+    width: 100%;
+  }
+  
+  .footerMenu {
+    margin-right: 20px;
+    border: 0px solid green;
+    list-style: none;
+  }
+  
+  .footerMenuli {
+    width: 100%;
+    color:white;
+    position:relative;
+    border:0px solid green;
+  }
+  
+  .fontIcons{
+    color:goldenrod;
+    font-size: 26px;
+    position:absolute;
+    left:-30px;
+    top:50%;
+    transform: translateY(-50%);
+  }
+  .spans{
+display: block;
+font-size: 16px;
+  }
+  .links li a {
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: block;
+    padding-left: 40px;
+    position: relative;
+    transition: 0.4s;
+  }
+  
+
+  
+  .links li:hover {
+    padding-left: 20px;
+  }
+  
+  .links li:hover a{
+    color:white;
+  }
+  
+  
+  .links li:last-child {
+    border-bottom: 0px solid rgb(185, 185, 185);
+  }
+  
+  .address{
+    color:rgb(185, 185, 185);
+    margin-left: 25px;
+  
+  }
+  .address li{
+    margin-bottom: 25px;
+    position: relative;
+  }
+  
+  .address li span {
+    display: block;
+    margin-top: 10px;;
+  }
+  
+  .location:before{
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f3c5";
+    color: var(--main-color);
+    left: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 28px;
+  }
+  
+  .time:before{
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f017";
+    color: var(--main-color);
+    left: -40px;
+    font-size: 28px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .phone:before{
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f879";
+    color: var(--main-color);
+    left: -40px;
+    font-size: 28px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  
+  .footer-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    border:0px solid green;
+   
+  }
+  
+  .footer-gallery img {
+    width: 75px;
+    border: 3px solid white;
+    margin:2px;
+  }
+
+  @media only screen and (max-width:555px)
+  {
+    .footer{
+      justify-content:center;
+      font-size: x-small;
+    } 
+  }
