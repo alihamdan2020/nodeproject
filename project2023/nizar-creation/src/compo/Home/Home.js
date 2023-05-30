@@ -11,6 +11,7 @@ function Home(){
         </Helmet>
             <Landing />
             <Services />
+            <MyPortfolio/>
         </>
     )
 }

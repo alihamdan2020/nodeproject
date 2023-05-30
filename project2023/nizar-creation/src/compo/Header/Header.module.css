@@ -1,5 +1,5 @@
 .container{
-
+    background-color: rgb(25,25,25);
     transition: 2s;
     display: flex;
     align-items: center;
@@ -16,10 +16,11 @@
     border:0px solid green;
     position: relative;
     z-index: 1000;
+    background-color:rgb(25,25,25);
 }
 
 .img{
-    width:75px;
+    width:65px;
 }
 
 .mainul {

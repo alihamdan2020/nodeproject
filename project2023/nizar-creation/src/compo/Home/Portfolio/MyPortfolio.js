@@ -19,6 +19,8 @@ export default function MyPortfolio() {
 			<div className={portfolioCardCss.contentgallery}>
 			{result}
 			</div>
+
+			
 		</div>
 	</div>
     )

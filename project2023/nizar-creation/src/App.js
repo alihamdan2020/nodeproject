@@ -1,6 +1,7 @@
 
-import{Header,Container,Footer,Home,About,Gallery,Admin,Service,ButtonToUp,Blog} from './compo/index'
+import{Header,Container,Footer,Home,About,Gallery,Admin,Service,ButtonToUp,Blog,Portfolio,PortfolioPage} from './compo/index'
 import { HashRouter as Router,Route,Routes } from 'react-router-dom'
+//import { BrowserRouter as Router,Route,Routes } from 'react-router-dom'
 
 import './main.css'
 
@@ -18,6 +19,8 @@ return(
           {/* while in nav bar services is a link to same home page at section services */}
           <Route path='/service' element={<Service />} />
           <Route path='/blog' element={<Blog />} />
+          <Route path='/portfolio' element={<PortfolioPage />} />
+          
   </Routes>
   </Container>
   <Footer/>

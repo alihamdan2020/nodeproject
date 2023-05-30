@@ -1,0 +1,36 @@
+.main{
+    position: relative;
+    margin: 20px auto;
+    width:80vw;
+    display: flex;
+    column-gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+}
+.img{
+    
+    width:200px;
+    height:200px;
+    margin-bottom: 40px;
+}
+.p{
+    margin:0;
+    padding:0;
+    margin-bottom: 10px;
+
+}
+.heading{
+    text-transform: capitalize;
+    color: darkslategray;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+.mainHeading{
+    text-transform:uppercase;
+    color: darkslategray;
+font-size: 46px;
+    margin-bottom: 10px;
+text-align: center;
+margin-top: 40px;
+
+}

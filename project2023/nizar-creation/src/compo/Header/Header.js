@@ -29,7 +29,7 @@ let showMenu=()=>{
     return <li key={item.id}><Links to={item.to} className={myClass}>{item.link}</Links></li>;
     })
 
-    var height=openMenu? {"height":"418px"} : {"height":"90px"};
+    var height=openMenu? {"height":"418px"} : {"height":"80px"};
     
     
     return(
@@ -41,11 +41,11 @@ let showMenu=()=>{
         <li><Links  to='/about' className={HeaderCss.a}>About</Links></li>
         <li>
             <Links onClick={showMenu}  className={HeaderCss.portfolio}>Portfolio <FaAngleDown className={HeaderCss.fontAwesomIcon} /></Links>
-                <ul className={HeaderCss.subul} id='subMenu'>
-                    <li><Links to='/' className={HeaderCss.a}>portfolio1</Links></li>
-                    <li><Links to='/' className={HeaderCss.a}>portfolio2</Links></li>
-                    <li><Links to='/' className={HeaderCss.a}>portfolio3</Links></li>
-                    <li><Links to='/' className={HeaderCss.a}>portfolio4</Links></li>
+                <ul className={HeaderCss.subul} id='subMenu' onClick={showMenu}>
+                    <li><Links to='/portfolio/#1' className={HeaderCss.a}>Abou Abed</Links></li>
+                    <li><Links to='/portfolio/#2' className={HeaderCss.a}>Tfaddal Grocery</Links></li>
+                    <li><Links to='/portfolio/#3' className={HeaderCss.a}>Phonenix Clean</Links></li>
+                    <li><Links to='/portfolio/#4' className={HeaderCss.a}>Vector Art</Links></li>
                 </ul>
         
         </li>

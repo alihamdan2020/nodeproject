@@ -8,4 +8,8 @@ export {default as Admin}from './Admin/Admin'
 export {default as Service}from './Service/Service'
 export {default as ButtonToUp}from './ButtonToUp/ButtonToUp'
 export {default as Blog}from './Blog/Blog'
+export {default as Portfolio}from './Home/Portfolio/MyPortfolio'
+export {default as PortfolioPage}from './PortfolioPage/PortfolioPage'
+
+
 

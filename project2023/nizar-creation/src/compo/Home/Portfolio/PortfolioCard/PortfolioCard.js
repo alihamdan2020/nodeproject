@@ -6,10 +6,12 @@ function Card(props)
 
     return(
         <>
+        <Links to={`/portfolio/#${props.id}`}>
+        
 				<div className={portfolioCardCss.gallerycard}>
                         <img src={props.PortfolioImage} className={portfolioCardCss.img}/>
 				</div>
-				
+				</Links>
 		</>
     )
 }

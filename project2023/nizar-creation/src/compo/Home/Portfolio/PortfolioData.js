@@ -1,9 +1,12 @@
-import portfolio1 from '../../../images/portfolio-01.png'
-import portfolio2 from '../../../images/portfolio-02.jpg'
-import portfolio3 from '../../../images/portfolio-03.png'
-import portfolio4 from '../../../images/portfolio-04.png'
+// abou abed
+import portfolio1 from '../../../images/abouabed/mainabouabed.jpg'
+import portfolio2 from '../../../images/tfaddal/Logo.jpg'
+import portfolio3 from '../../../images/vector/logo.jpg'
+import portfolio4 from '../../../images/phonenix/Logo.jpg'
 import portfolio5 from '../../../images/portfolio-05.jpg'
 import portfolio6 from '../../../images/portfolio-06.png'
+
+// tfaddal
 
 
 export const Data=[

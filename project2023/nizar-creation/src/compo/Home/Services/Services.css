@@ -3,6 +3,8 @@
   padding-bottom: var(--main-padding);
   width:80vw;
   margin:0 auto;
+  padding-left:40px;
+  padding-right: 40px;
 }
 
 .services .content-services {

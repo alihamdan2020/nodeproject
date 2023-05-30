@@ -1,0 +1,13 @@
+.main{
+    margin: 20px auto;
+    width:80vw;
+    border:0px solid green
+}
+
+.images{
+    display:grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+}
+.sectionHeading{
+    padding-left: 10px;
+}
