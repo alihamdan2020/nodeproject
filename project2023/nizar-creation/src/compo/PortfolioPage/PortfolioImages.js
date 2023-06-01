@@ -9,6 +9,7 @@ import Apic7 from '../../images/abouabed/Pic7.jpg'
 import Apic8 from '../../images/abouabed/Pic8.jpg'
 import Apic9 from '../../images/abouabed/Pic9.jpg'
 import Apic10 from '../../images/abouabed/Pic10.jpg'
+import Alogo from '../../images/abouabed/mainabouabed.jpg'
 
 // T mean tfaddal
 import Tpic1 from '../../images/tfaddal/pic1.jpg'
@@ -18,8 +19,10 @@ import Tpic4 from '../../images/tfaddal/pic4.jpg'
 import Tpic5 from '../../images/tfaddal/pic5.jpg'
 import Tpic6 from '../../images/tfaddal/pic6.jpg'
 import Tpic7 from '../../images/tfaddal/pic7.jpg'
+import Tlogo from '../../images/tfaddal/Logo.jpg'
 
 // V mean vector
+import Vlogo from '../../images/vector/logo.jpg'
 import Vpic1 from '../../images/vector/Vector1.jpg'
 import Vpic2 from '../../images/vector/Vector2.jpg'
 import Vpic3 from '../../images/vector/Vector3.jpg'
@@ -33,9 +36,34 @@ import Ppic4 from '../../images/phonenix/PC4.jpg'
 import Ppic5 from '../../images/phonenix/PC5.jpg'
 import Ppic6 from '../../images/phonenix/PC6.jpg'
 import Ppic7 from '../../images/phonenix/PC7.jpg'
+import Plogo from '../../images/phonenix/Logo.jpg'
+
+//C for caricature
+import C1 from '../../images/caricature/Car1.jpg'
+import C2 from '../../images/caricature/Car2.jpg'
+import C3 from '../../images/caricature/Car3.jpg'
+import C4 from '../../images/caricature/Car4.jpg'
+import C5 from '../../images/caricature/Car5.jpg'
+import C6 from '../../images/caricature/Car6.jpg'
+import C7 from '../../images/caricature/Car7.jpg'
+import C8 from '../../images/caricature/Car8.jpg'
+import C9 from '../../images/caricature/Car9.jpg'
+import C10 from '../../images/caricature/Car10.jpg'
+import C11 from '../../images/caricature/Car11.jpg'
+import C12 from '../../images/caricature/Car12.jpg'
+import C13 from '../../images/caricature/Car13.jpg'
+import C14 from '../../images/caricature/Car14.jpg'
+import C15 from '../../images/caricature/Car15.jpg'
+import C16 from '../../images/caricature/Car16.jpg'
+
 
 
 let Data=[
+{
+"id":29,
+"cat":1,
+"img":Alogo
+ },
  {
 "id":1,
 "cat":1,
@@ -87,6 +115,11 @@ let Data=[
 "img":Apic10
 },
 {
+"id":30,
+"cat":2,
+"img":Tlogo
+},
+{
 "id":11,
 "cat":2,
 "img":Tpic1
@@ -120,6 +153,11 @@ let Data=[
 "id":17,
 "cat":2,
 "img":Tpic7
+},
+{
+"id":31,
+"cat":3,
+"img":Plogo
 },
 {
 "id":18,
@@ -157,6 +195,11 @@ let Data=[
 "img":Ppic7
 },
 {
+    "id":28,
+    "cat":4,
+    "img":Vlogo
+    },
+{
 "id":24,
 "cat":4,
 "img":Vpic1
@@ -176,6 +219,83 @@ let Data=[
 "cat":4,
 "img":Vpic4
 },
+{
+"id":28,
+"cat":5,
+"img":C1
+},
+{
+"id":29,
+"cat":5,
+"img":C2
+},
+{
+"id":100,
+"cat":5,
+"img":C3
+},
+{
+"id":101,
+"cat":5,
+"img":C4
+},
+{
+"id":102,
+"cat":5,
+"img":C5
+},
+{
+"id":103,
+"cat":5,
+"img":C6
+},
+{
+"id":104,
+"cat":5,
+"img":C7
+},
+{
+"id":105,
+"cat":5,
+"img":C8
+},
+{
+"id":106,
+"cat":5,
+"img":C9
+},
+{
+"id":107,
+"cat":5,
+"img":C10
+},
+{
+    "id":108,
+    "cat":5,
+    "img":C11
+    },
+{
+"id":109,
+"cat":5,
+"img":C12
+},
+{
+"id":110,
+"cat":5,
+"img":C13
+},
+{
+"id":111,
+"cat":5,
+"img":C14
+},
+{
+"id":112,
+"cat":5,
+"img":C15
+}
+
+
 
 ]
 

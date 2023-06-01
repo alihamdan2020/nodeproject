@@ -43,12 +43,6 @@ import portrait4 from '../../../images/portrait-4.jpg'
 
 
 
-import image2_1 from '../../../images/service2-1.jpg'
-import image2_2 from '../../../images/service2-2.jpg'
-import image2_3 from '../../../images/service2-3.jpg'
-import image3_1 from '../../../images/service3-1.jpg'
-import image3_2 from '../../../images/service3-2.jpg'
-import image3_3 from '../../../images/service3-3.jpg'
 
 export const Data=[
 {
@@ -135,18 +129,19 @@ images:[
     {imgName:mural2,title:'picture1'},
     ],
 },
-{id:9,
-serviceName:"2D Animation",
-serviceDesc:"You can create traditional 2D animations using hand-drawn or digital techniques. These types of animations can be great for short films, explainer videos, and commercials.",
-serviceImage:image3,
-gallery:'gallery9',
-images:[
-    {imgName:image3_1,title:'picture1'},
-    {imgName:image3_2,title:'picture1'},
-    {imgName:image3_3,title:'picture1'},
-    {imgName:image2_3,title:'picture1'},
-    {imgName:image2_1,title:'picture1'},
-    {imgName:customIllutration3,title:'picture1'}
-    ],
-}
+
+// {id:9,
+// serviceName:"2D Animation",
+// serviceDesc:"You can create traditional 2D animations using hand-drawn or digital techniques. These types of animations can be great for short films, explainer videos, and commercials.",
+// serviceImage:image3,
+// gallery:'gallery9',
+// images:[
+//     {imgName:image3_1,title:'picture1'},
+//     {imgName:image3_2,title:'picture1'},
+//     {imgName:image3_3,title:'picture1'},
+//     {imgName:image2_3,title:'picture1'},
+//     {imgName:image2_1,title:'picture1'},
+//     {imgName:customIllutration3,title:'picture1'}
+//     ],
+// }
 ]

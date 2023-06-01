@@ -3,7 +3,7 @@ import portfolio1 from '../../../images/abouabed/mainabouabed.jpg'
 import portfolio2 from '../../../images/tfaddal/Logo.jpg'
 import portfolio3 from '../../../images/vector/logo.jpg'
 import portfolio4 from '../../../images/phonenix/Logo.jpg'
-import portfolio5 from '../../../images/portfolio-05.jpg'
+import portfolio5 from '../../../images/caricature/Thumbnail.jpg'
 import portfolio6 from '../../../images/portfolio-06.png'
 
 // tfaddal

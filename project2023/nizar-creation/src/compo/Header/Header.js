@@ -3,7 +3,6 @@ import logo from '../../images/logo.png'
 import { Link } from 'react-router-dom'
 import {FaBars} from 'react-icons/fa'
 import { useState } from 'react'
-import {Data} from './Data'
 import { HashLink as Links } from 'react-router-hash-link';
 import {FaAngleDown} from 'react-icons/fa'
 
@@ -23,14 +22,8 @@ let showMenu=()=>{
        })
     }
   
-    let links=Data.map(function(item,index) {
-       let myClass=index===0 ? HeaderCss.frstlink : HeaderCss.a  ;
-    //    let toPath=index===3 ? '' : item.to  ;
-    return <li key={item.id}><Links to={item.to} className={myClass}>{item.link}</Links></li>;
-    })
-
     var height=openMenu? {"height":"418px"} : {"height":"80px"};
-    
+   
     
     return(
         <div style={height} className={HeaderCss.container}>
@@ -44,8 +37,8 @@ let showMenu=()=>{
                 <ul className={HeaderCss.subul} id='subMenu' onClick={showMenu}>
                     <li><Links to='/portfolio/#1' className={HeaderCss.a}>Abou Abed</Links></li>
                     <li><Links to='/portfolio/#2' className={HeaderCss.a}>Tfaddal Grocery</Links></li>
-                    <li><Links to='/portfolio/#3' className={HeaderCss.a}>Phonenix Clean</Links></li>
-                    <li><Links to='/portfolio/#4' className={HeaderCss.a}>Vector Art</Links></li>
+                    <li><Links to='/portfolio/#3' className={HeaderCss.a}>Vector Art</Links></li>
+                    <li><Links to='/portfolio/#4' className={HeaderCss.a}>Phonenix Clean</Links></li>
                 </ul>
         
         </li>
